@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <h3>Submitted Notes</h3>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.note }}</li>  <!-- Display the note field -->
+        {% else %}
+            <li>No notes submitted yet.</li>
+        {% endfor %}
+    </ul><br>
+    <a href="/">Go back Home</a>
+</body>
+</html>
